@@ -6,11 +6,11 @@ const forcast=(state,callback)=>{
             //console.log(response.body);
                 if(error)
                 {
-                    callback('Unable to connect',undefined);
+                    callback('Unable to connect',"undfined Value");
         
                 }
                 else if(response.body.error){
-                    callback('Unable to find location',undefined);
+                    callback('Unable to find location',"undfined Value");
                 }
                 else{
                     //console.log(`The temperature of ${response.body.location.name} is ${response.body.current.temperature}`);
